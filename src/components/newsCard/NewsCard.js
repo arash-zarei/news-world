@@ -4,8 +4,7 @@ import React, { useState } from "react";
 import "./NewsCard.css";
 
 const NewsCard = ({ data }) => {
-
-    const [isMore , setIsMore] = useState(false)
+  const [isMore, setIsMore] = useState(false);
 
   const { author, date, time, title, imageUrl, content } = data;
 
@@ -18,8 +17,10 @@ const NewsCard = ({ data }) => {
         <p className="author">{author}</p>
         <div className="titleMore">
           <h4 className="newsTitle">{title}</h4>
-          <p className={`contentNews ${isMore && 'display'}`}>{content}</p>
-          <button onClick={() => setIsMore(!isMore)} className="moreRead">{isMore ? 'fewer' : 'more...'}</button>
+          <p className={`contentNews ${isMore && "display"}`}>{content}</p>
+          <button onClick={() => setIsMore(!isMore)} className="moreRead">
+            {isMore ? "fewer" : "more..."}
+          </button>
         </div>
         <div className="dateTime">
           <p>{date}</p>

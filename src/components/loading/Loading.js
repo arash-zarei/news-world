@@ -1,14 +1,22 @@
-import React from 'react';
+import React from "react";
 
 // Gif
-import loading from '../../gif/loading_anim.gif'
+import loading from "../../gif/loading_anim.gif";
 
 const Loading = () => {
-    return (
-        <div>
-            <img src={loading} alt="" />
-        </div>
-    );
+  return (
+    <div
+      style={{
+        width: "100%",
+        height: "100vh",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      <img src={loading} alt="LOADING ..." />
+    </div>
+  );
 };
 
 export default Loading;
