@@ -1,0 +1,175 @@
+#light .nwesCard{
+    background-color: #fff;
+}
+
+#dark .nwesCard{
+    background-color: #0a0911;
+}
+
+.nwesCard{
+    width: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 0 10px -5px #000;
+}
+
+.nwesCard .image{
+    width: 100%;
+    height: 200px;
+}
+
+.nwesCard .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nwesCard .description{
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.nwesCard .author{
+    font-size: 13px;
+}
+
+#light .nwesCard .author{
+    color: #818080;
+}
+#dark .nwesCard .author{
+    color: #ecebeb;
+}
+
+#light .nwesCard .description .newsTitle{
+    color: #0a0911;
+}
+
+#dark .nwesCard .description .newsTitle{
+    color: #2bc3ea;
+}
+
+#light .nwesCard .description .titleMore .contentNews{
+    color: #0a0911;
+}
+
+#dark .nwesCard .description .titleMore .contentNews{
+    color: #fff;
+}
+
+.nwesCard .description .titleMore .contentNews{
+    font-size: 14px;
+    display: none;
+}
+
+.nwesCard .description .titleMore .contentNews.display{
+    display: block;
+    margin: 20px 0;
+    line-height: 25px;
+}
+
+.nwesCard .description .titleMore .moreRead{
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #9c62f6;
+    color: #fff;
+    margin: 5px 0;
+    display: inline-block;
+}
+
+#light .nwesCard .description .dateTime{
+    color: #676668;
+}
+
+#dark .nwesCard .description .dateTime{
+    color: #fff;
+}
+
+.nwesCard .description .dateTime{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/* .nwesCard:first-child{
+    width: 50%;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.nwesCard{
+    width: 350px;
+    height: 300px;
+    border: 1px solid red;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 0 10px -5px #000;
+}
+
+.nwesCard::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 55%;
+    background: linear-gradient(transparent,rgba(0,0,0,.8));
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.nwesCard img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nwesCard .description{
+    width: 100%;
+    z-index: 3;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.nwesCard .description .moreRead{
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #9c62f6;
+    color: #fff;
+    margin: 5px 0;
+    display: inline-block;
+}
+
+.nwesCard .description .dateTime{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .nwesCard:first-child{
+        width: 90%;
+    }
+
+    .nwesCard {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+    .nwesCard {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .nwesCard {
+        width: 100%;
+    }
+} */
